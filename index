@@ -1,27 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+</head>
 <body>
-<h1> Hi everyone what is your name?</h1>
+
+  <!-- Button -->
+  <button onclick="sayHello()">Click Me</button>
+
+  <!-- JavaScript -->
+  <script>
+    function sayHello() {
+      alert("Hello! You clicked the button.");
+    }
+  </script>
 
 </body>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+</html>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCC-2-NSovPprkLsbeyCGGLf1msO5GB2es",
-    authDomain: "newarkcharter-bpa-website-de.firebaseapp.com",
-    projectId: "newarkcharter-bpa-website-de",
-    storageBucket: "newarkcharter-bpa-website-de.firebasestorage.app",
-    messagingSenderId: "671033726578",
-    appId: "1:671033726578:web:4f2b15696cba6f9e6014eb",
-    measurementId: "G-V6H0831J66"
-  };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+  
